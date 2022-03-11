@@ -2,6 +2,7 @@ console.log("abc")
 
 $(document).ready(function () {
     $('#addForm').validate({
+        
         onfocusout: false,
         onkeyup: false,
         onclick: false,
@@ -57,10 +58,12 @@ $(document).ready(function () {
                 email: "Yeu cau nhap dung dinh dang"
             },
             dienthoai:{
+                number: "Yêu cầu nhập số", 
                 rangelength:"Yêu cầu nhập đúng 10 số"
             }
 
         }
+        
     });
 });
 
@@ -71,4 +74,8 @@ $('#btn_Huy').click(function (e) {
     e.preventDefault();
     
 });
+
+
+
+
 

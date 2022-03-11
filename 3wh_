@@ -1,24 +1,85 @@
-Task 2: Javascript & JQuery
-1.	What?
--	JS:
-    + là ngôn ngữ lập trình phía máy khách(client), phổ biến nhất và là ngôn ngữ không thể thiếu khi lập trình web
-    + được sử dụng kết hợp với HTML, CSS để thiết kế website động
--	JQuery:
-    + là một thư viện Javascript, giúp xây dựng những chức năng sử dụng JS một cách dễ dàng hơn
-    + được tích hợp nhiều module khác nhau từ hiệu ứng cho đến truy vấn selector
-    + các module: Ajax, Atributes, Effect, Event, Form, DOM, Selector
-2.	Why?
-(Tại sao nên sử dụng JQuery thay cho JS thuần)
--	Sử dụng thư viện sẽ hỗ trợ tốt hơn
--	Không mất quá nhiều thời gian xử lý hiểu ứng 
--	Giúp lập trình nhanh, code ngắn gọn hơn
--	Đảm bảo chạy hầu hết trên các trình duyệt, điều này rất khó khi sử dụng JS
--	Hỗ trợ nhiều hàm, nhiều thuộc tính giúp tạo ra hiệu ứng nhanh chóng
-•	Nhược điểm:
--   Làm client chậm hợn: client không chỉ hiển thị nữa và mà còn phải xử lý nhiều chức năng từ jquery 
--	Cần tải thư viện về để sử dụng
--   Nếu sử dụng link CDN có thể bị ảnh hưởng khi mất mạng hoặc khi sever chứa link CDN bị sập
--   So với JS thuần thì một số chức năng có thể không có do chưa được phát triển => phải sử dụng JS thuần để xử lý
-3.	When?
--   Sử dụng khi muốn tạo website động, cần hiệu ứng
--   Cần khi thao tác khác cho website: hiển thị thông báo, chuyển trang, đóng cửa sổ, ... 
+Task3: PHP & API
+1. PHP - Hypertext Preprocessor
+    1.1. What?
+        - Là ngôn ngữ dùng để xây dựng back-end cho website/ứng dụng web
+        - Làm việc trên server dùng để kết nối cơ sở dữ liệu
+        - PHP dễ dàng nhúng vào HTML qua cặp thẻ <?php ...?>
+        - Là ngôn ngữ lập trình cực kỳ phổ biến và hỗ trợ rất mạnh khi xây dựng web/ứng dựng web
+        - PHP tương thích cao với các trình duyệt  
+    1.2. Why?
+        - Ưu điểm: 
+            + Không áp dụng các quy tắc cứng nhắc vào việc xây dựng các tính năng nên có thể linh hoạt 
+            giải quyết vấn đề theo nhiều cách khác nhau 
+            + Có cộng đồng lập trình hỗ trợ đông đảo
+            + Là mã nguồn mở => miễn phí và có thể sử dụng các mã nguồn có sẵn 
+            + Hiện nay đã có những thư viện hỗ trợ phong phú giúp cho việc bảo mật cao
+        - Nhược điểm: 
+            + Cấu trúc phức tạp, không dễ viết, dễ nhìn như một số ngôn ngữ khác
+            + Dễ dàng bị sao chép code cho các dự án
+            + Chỉ đặc thù cho xây dựng web và ứng dụng web và khó hơn khi làm ứng dụng hệ điều hành hay phần mềm 
+    1.3. When?
+        - Chắc chắn là xây dựng web: các website có thể làm bằng PHP bằng FE/BE vì PHP sinh ra mã HTML tạo ra giao diện web 
+        - Tạo ứng dụng : Xây dựng các chức năng ứng dụng tương tự như Web
+        - Tạo Hệ thống quản lý nội dụng - việc kết nối đến CSDL -> trả về kết quả cho người dùng
+        - Có thể đọc, ghi, xóa, file trên máy chủ, tương tác với các phần mềm khác trên máy chủ
+        - Có thể gửi nhận cookie, mã hóa, giải mã dữ liệu
+        - Xây dựng trang bán hàng, mạng xã hội, blog,...
+2. API - Appication Progaming Interface 
+    - Là giao diện lập trình ứng dụng - có thể hiểu là cổng kết nối giữa các ứng dụng
+    - Chức năng chính : cho phép 2 ứng dụng giao tiếp với nhau, API đóng vai trò trung gian để kết nối các ứng dụng , 
+    giúp các ứng dụng hoạt động trơn tru và thuật tiện hơn
+    - Ứng dụng: 
+        + Web API: sử dụng trong các hệ thống website. VD: chức năng đăng nhập thông qua Google, Facebook, Github,...
+        + API trên hệ điều hành: trên Win hay Linux, API đặc tả các hàm, phương thức cũng như giao thức kết nối. Giúp 
+        tạo ra các phần mềm ứng dụng có thể tương tác trức tiếp với hệ điều hành 
+        + API của thư viện/framework: API mô tả và quy định các hành động mong muốn mà các thư viện cung cấp. Một API
+        giúp cho một chương trình viết bằng ngôn ngữ này có thể sử dụng thư viện được viết bằng ngôn ngữ khác. VD: có thể dùng PHP
+        để yêu cầu một thư viện file PDF được viết bằng Java 
+3. JWT - JSON Web Token
+    3.1. WHAT?
+    - Là một phương tiện đại diện cho các yêu cầu chuyển giao giữa Client - Server, 
+    - Các thông tin trong chuỗi được định dạng bằng JSON
+    - Token gồm 3 phần : (được ngăn bằng dấu ".")
+        + header:
+            // chứa kiểu dữ liệu và thuật toán sử dụng để mã hóa chuỗi JWT
+        + payload:
+            // payload sẽ chứa các thông tin mình muốn đặt trong chuỗi
+            // VD: username, userid, author,...
+            // đặt quá nhiều thông tin trong payload sẽ ảnh hưởng đến độ trễ của Server khi phải xác nhận Token quá dài 
+        + signature:
+            // được tạo ra bằng cách mã hóa phần header, payload kèm theo một chuỗi secret(khóa bí mật)
+            // encode(header + payload) + private key => signature
+
+        -----> header + payload + signature = JWT
+
+    3.2. WHY?
+    *) Ưu diểm
+    - Nhỏ gọn hơn : 
+        + JWT ngắn gọn hơn XML => mã hóa Token cũng sẽ ngắn SAML
+        => JWT trở thanh một lựa chọn phù hợp hơn trong HTML và môi trường HTTP
+        ----------------(theo em hiểu thì JWT sử dụng để xác thực hoặc trao đổi thông tin cho môi trường HTTP 
+        còn SAML sử dụng cho môi trường XML) ---------------------------------------------------------
+    - An toàn hơn: 
+        + Sử dụng cặp khóa public-private dưới chứng chỉ X.509 để ký, JWT cũng có thể được ký bằng một mã bí mật được chia sẻ
+        sử dụng thuật toán HMAX
+        + SAML cũng có thể sử dụng cặp khóa tương tự nhưng lại có nhiều lỗ hổng bảo mật, phương pháp thực hiện khó khăn hơn JWT
+    - Phổ biến hơn :
+        + JSON phổ biến hơn trong hầu hết các ngôn ngữ lập trình 
+    - Dễ xử lý hơn :
+        + JWT được sử dụng ở Internet => dễ dàng xử lý trên hầu hết thiết bị người dùng, đặc biệt là các thiết bị di dộng       
+    3.3. When?
+    - Sử dụng để XÁC THỰC và đây là hình thức phổ biến nhất khi sử dụng JWT: 
+        + Khi người dùng đăng nhập vào hệ thống thì request sẽ chứa thêm mã JWT
+        => Cho phép truy cập quyền sử dụng vào url, service, và resource mà mã Token đó cho phép
+    - Sử dụng để TRAO ĐỔI THÔNG TIN:
+        + là một cách tốt để truyền thông tin an toàn giữa các thành viên với nhau, nhờ vào signature
+        + người nhận có thể biết người gửi là ai thông qua signature
+        + có thể nhận diện được signature giả mã hay không dựa vào cách mã hóa header + payload 
+    3.4. HOW?
+    - Authentication
+        + Khi người dùng nhập thông tin tài khoản/mật khẩu vào trình duyệt, trình duyệt sẽ tự POST tài khoản/mật khẩu
+        của người dùng về server
+        + Lúc này server xác thực và trả một chuỗi JWT cho trình duyệt. 
+        + Token JWT sẽ được lưu trữ trong cookies hoặc LocalStorage, thay vì tạo session trên server và trả về cookie
+        + Khi gửi thông tin xác thực đăng nhập trả lại cho server sẽ kèm theo Token
+        + Server sẽ kiểm tra JWT signature rồi lấy thông tin của người dùng từ JWT rồi phản hồi lại cho client
